@@ -38,6 +38,10 @@ a   {
     color: #e5e7eb;
 }
 
+a:hover {
+    opacity: 0.7;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -51,7 +55,7 @@ a   {
     justify-content: space-around;
     padding: 100px;
     background-color: #1f2937;
-
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -115,6 +119,9 @@ a   {
     padding: 10px 15px;
 }
 
+.header button:hover    {
+    opacity: 0.7;
+}
 .signup-button  {
     background-color: #159BD1;
     color: #eeeeee;
@@ -127,6 +134,10 @@ a   {
     color: #e5e7eb;
     text-decoration: none;
     margin-top: 30px;
+}
+
+.signup-button:hover    {
+    opacity: 0.7;
 }
 
 .line2  {
@@ -165,24 +176,54 @@ a   {
     text-align: center;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
+.name:hover {
+    opacity: 0.7;
+}
+
+.final-section  {
+    display: flex;
+    background-color: #159BD1;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.end-links  {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.social-media   {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.slogan {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: #e5e7eb;
+    align-self: center;
+    font-style: italic;
+    display: flex;
+}
+
+.fa  {
+    background-color: #1f2937;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 10px;
+    max-width: 15px;
+    max-height: 15px;
+}
   
-  .fa:hover {
+
+.fa:hover {
     opacity: 0.7;
   }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
+
