@@ -1,4 +1,5 @@
 body {
+    height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     display: flex;
@@ -57,11 +58,7 @@ a:hover {
     background-color: #1f2937;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.line1  {
-    height: 1px;
-    background-color: #159BD1;
+    flex: 1;
 }
 
 .left-speech    {
@@ -140,14 +137,15 @@ a:hover {
     opacity: 0.7;
 }
 
-.line2  {
-    height: 1px;
-    background-color: #159BD1;
+.mid-section    {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
 }
 
 .merchandise    {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 50px;
     margin: 50px;
@@ -179,6 +177,83 @@ a:hover {
 .name:hover {
     opacity: 0.7;
 }
+
+.third-section  {
+    display: flex;
+    flex-direction: column;
+    background-color: #12658D;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-container    {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    width: 800px;
+    margin: 10px 40px;
+}
+
+.quote  {
+    font-style: italic;
+    font-size: 40px;
+}
+
+.author {
+    font-size: 25px;
+    font-weight: 1000;
+    align-self: flex-end;
+    margin-top: 10px;
+ }
+
+.forth-section  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.dialoge-box    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #e5e7eb;
+    border-radius: 20px;
+}
+
+.left-stuff {
+    font-weight: 800;
+    color:#159BD1;
+    font-size: 20px;
+    text-align: left;
+    margin-right: 50px;
+}
+    
+
+.right-button   {
+    background-color: #159BD1;
+    color: #eeeeee;
+    border: 0;
+    border-radius: 8%;
+    font-size: 25px;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: #e5e7eb;
+    text-decoration: none;
+    min-width: fit-content;
+}
+
+.right-button:hover {
+    opacity: 0.7;
+}
+
+.bold   {
+    font-size: 25px;
+}
+
+
 
 .final-section  {
     display: flex;
@@ -227,3 +302,10 @@ a:hover {
     opacity: 0.7;
   }
 
+.line1  {
+    border: 1px solid #12658D;
+}
+
+.line2  {
+    border: 1px solid #12658D;
+}
